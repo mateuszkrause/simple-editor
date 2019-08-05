@@ -1,16 +1,78 @@
 @import "_normalize";
 @import "_variables";
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap&subset=latin-ext");
 
 html {
   box-sizing: border-box;
+  font-family: "Open Sans";
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  background: #fafafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.main {
+  max-width: 544px;
+  width: 100%;
+}
+
+.main__header {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 64px;
+}
+.form {
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__wrapper {
+    margin: 0;
+  }
+  &__label {
+    display: block;
+    font-size: 14px;
+  }
+  &__message {
+    background: #ffffff;
+    border: 1px solid #bdbdbd;
+    border-radius: 16px;
+    width: 100%;
+    min-height: 288px;
+    margin-bottom: 40px;
+    padding: 12px;
+  }
+  &__button {
+    border-radius: 4px;
+    min-width: 200px;
+    height: 48px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    &--load {
+      background: #ffffff;
+      border: 1px solid #121232;
+    }
+    &--save {
+      background: #121232;
+      border: none;
+      color: #ffffff;
+    }
+  }
+  &__label {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 1px;
+  }
 }
