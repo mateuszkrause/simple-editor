@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap&subset=latin-ext");
 html {
   line-height: 1.15;
   /* 1 */
@@ -309,14 +310,80 @@ template {
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  font-family: "Open Sans"; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
 body {
-  color: #F9C802;
-  background: #000; }
+  background: #fafafc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh; }
+
+.main {
+  max-width: 544px;
+  width: 100%; }
+
+.main__header {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 64px; }
+
+.form__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.form__wrapper {
+  margin: 0; }
+
+.form__label {
+  display: block;
+  font-size: 14px; }
+
+.form__message {
+  background: #ffffff;
+  border: 1px solid #bdbdbd;
+  border-radius: 16px;
+  width: 100%;
+  min-height: 288px;
+  margin-bottom: 40px;
+  padding: 12px; }
+
+.form__button {
+  border-radius: 4px;
+  min-width: 200px;
+  height: 48px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px; }
+  .form__button--load {
+    background: #ffffff;
+    border: 1px solid #121232; }
+  .form__button--save {
+    background: #121232;
+    border: none;
+    color: #ffffff; }
+
+.form__label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 1px; }
 
 /*# sourceMappingURL=main.css.map */
